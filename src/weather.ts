@@ -5,8 +5,8 @@ export default class Weather {
 
   constructor(
     public location: string,
-    public headline: string,
-    private temperatureInKelvin: number
+    public description: string,
+    temperatureInKelvin: number
   ) {
     this.temperature = Weather.kelvinToCentigrade(temperatureInKelvin);
   }
@@ -21,7 +21,7 @@ export default class Weather {
 
     return new Weather(
       parsedResponse.name,
-      parsedResponse.weather[0].main,
+      parsedResponse.weather[0].description,
       parsedResponse.main.temp
     );
   }
