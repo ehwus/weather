@@ -21,3 +21,32 @@ body {
   color: #dedfdc;
   font-weight: 100;
 }
+
+input {
+  background: #df9938;
+  border: 1px solid #dedfdc;
+  border-radius: 8px;
+  height: 50px;
+  width: 260px;
+  font-size: 30px;
+  color: #dedfdc;
+  padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background: #015a6b;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  height: 50px;
+  font-size: 30px;
+  color: #dedfdc;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
