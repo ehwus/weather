@@ -37,6 +37,10 @@ input:focus {
   outline: none;
 }
 
+.userInput {
+  margin-bottom: 100px;
+}
+
 button {
   background: #015a6b;
   border: 1px solid #979797;
@@ -52,4 +56,19 @@ button {
 button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+#resultsCard {
+  visibility: hidden;
+  background: #ac2c34;
+  border: 3px solid #dedfdc;
+  border-radius: 8px;
+  width: 400px;
+  height: 520px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+img {
+  max-width: 300px;
 }
