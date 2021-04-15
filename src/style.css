@@ -19,7 +19,6 @@ body {
 .heading {
   font-size: 46px;
   color: #dedfdc;
-  font-weight: 100;
 }
 
 input {
@@ -30,6 +29,7 @@ input {
   width: 260px;
   font-size: 30px;
   color: #dedfdc;
+  font-weight: 100;
   padding-left: 10px;
 }
 
@@ -43,7 +43,10 @@ button {
   border-radius: 8px;
   height: 50px;
   font-size: 30px;
+  font-weight: 100;
   color: #dedfdc;
+
+  margin-left: 20px;
 }
 
 button:hover {
