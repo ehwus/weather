@@ -1,5 +1,6 @@
 import Weather from './weather';
 import Gif from './gif';
+import './style.css';
 
 const gifLocationInDom = document.getElementById('gif');
 const input = document.getElementById('locationInput') as HTMLInputElement;
