@@ -69,6 +69,17 @@ button:hover {
   margin-top: 40px;
 }
 
+#errorCard {
+  visibility: hidden;
+  background: #ac2c34;
+  border: 3px solid #dedfdc;
+  border-radius: 8px;
+  width: 400px;
+  margin: auto;
+  position: relative;
+  bottom: 500px;
+}
+
 img {
   max-width: 300px;
 }
