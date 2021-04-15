@@ -82,4 +82,18 @@ button:hover {
 
 img {
   max-width: 300px;
+  max-height: 250px;
+}
+
+.locationAndTemp {
+  font-size: 46px;
+  color: #dedfdc;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 33px;
+  color: #dedfdc;
+  margin-top: 0;
 }
