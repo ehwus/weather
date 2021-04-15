@@ -12,13 +12,13 @@ body,
 }
 
 body {
-  background-color: #007c47;
+  background-color: white;
   font-family: 'News Cycle', sans-serif;
 }
 
 .heading {
   font-size: 46px;
-  color: #dedfdc;
+  color: rgb(97, 96, 96);
 }
 
 input {
@@ -28,7 +28,7 @@ input {
   height: 50px;
   width: 260px;
   font-size: 30px;
-  color: #dedfdc;
+  color: rgb(97, 96, 96);
   font-weight: 100;
   padding-left: 10px;
 }
@@ -60,7 +60,7 @@ button:hover {
 
 #resultsCard {
   visibility: hidden;
-  background: #ac2c34;
+  background: #df9938;
   border: 3px solid #dedfdc;
   border-radius: 8px;
   width: 400px;
@@ -72,7 +72,7 @@ button:hover {
 
 #errorCard {
   visibility: hidden;
-  background: #ac2c34;
+  background: #df9938;
   border: 3px solid #dedfdc;
   border-radius: 8px;
   width: 400px;
