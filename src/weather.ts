@@ -1,6 +1,6 @@
 import { IWeather } from './types';
 
-const apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const apiKey = '&APPID=61994fd9117fcb793efcd1c61bbcc70c';
 
 export default class Weather {
