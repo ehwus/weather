@@ -12,18 +12,22 @@ export default class Weather {
   }
 
   static async getCurrentWeather() {
-    const response = await fetch(
-      'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=61994fd9117fcb793efcd1c61bbcc70c',
-      { mode: 'cors' }
-    );
+    try {
+      const response = await fetch(
+        'http://api.openweathermap.org/data/2.5/weather?q=Madeupistan&APPID=61994fd9117fcb793efcd1c61bbcc70c',
+        { mode: 'cors' }
+      );
 
-    const parsedResponse: IWeather = await response.json();
+      const parsedResponse: IWeather = await response.json();
 
-    return new Weather(
-      parsedResponse.name,
-      parsedResponse.weather[0].description,
-      parsedResponse.main.temp
-    );
+      return new Weather(
+        parsedResponse.name,
+        parsedResponse.weather[0].description,
+        parsedResponse.main.temp
+      );
+    } catch (error) {
+      return Promise.reject();
+    }
   }
 
   private static kelvinToCentigrade(kelvin: number): number {
