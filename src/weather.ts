@@ -1,5 +1,8 @@
 import { IWeather } from './types';
 
+const apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=';
+const apiKey = '&APPID=61994fd9117fcb793efcd1c61bbcc70c';
+
 export default class Weather {
   temperature: number;
 
@@ -11,12 +14,11 @@ export default class Weather {
     this.temperature = Weather.kelvinToCentigrade(temperatureInKelvin);
   }
 
-  static async getCurrentWeather() {
+  static async getCurrentWeather(location: string) {
     try {
-      const response = await fetch(
-        'http://api.openweathermap.org/data/2.5/weather?q=Madeupistan&APPID=61994fd9117fcb793efcd1c61bbcc70c',
-        { mode: 'cors' }
-      );
+      const response = await fetch(apiUrl + location + apiKey, {
+        mode: 'cors',
+      });
 
       const parsedResponse: IWeather = await response.json();
 
