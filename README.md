@@ -1,6 +1,6 @@
 # Weather
 
-A simple web app for finding the weather in a given location, providing basic information with a relevant GIF. Implemented with TypeScript and Webpack, and deployed on Netlify here: https://app.netlify.com/sites/elastic-kilby-4148ab/overview
+A simple web app for finding the weather in a given location, providing basic information with a relevant GIF. Implemented with TypeScript and Webpack, and deployed on Netlify here: https://elastic-kilby-4148ab.netlify.app
 
 This was an exercise to practice using TypeScript with Webpack, as well as to practice working with APIs using Fetch.
 
